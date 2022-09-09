@@ -1,0 +1,22 @@
+{
+  "name": "@pierogi.dev/get_geth_connections",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "license": "MIT",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "web3": "^1.7.5",
+    "dotenv": "^16.0.2"
+  },
+  "devDependencies": {
+    "typescript": "^4.8.3"
+  }
+}
