@@ -15,7 +15,7 @@ jobs:
         with:
           node-version: '16.x'
           registry-url: 'https://registry.npmjs.org'
-          scope       : '@ethereum_net_stats/get_geth_connections'
+          scope       : '@ethereum_net_stats'
           always-auth : true
         env :
           NODE_AUTH_TOKEN: ${{ secrets.NODE_AUTH_TOKEN }}
