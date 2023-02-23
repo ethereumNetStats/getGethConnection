@@ -1,7 +1,10 @@
 import "dotenv/config";
-import type { Eth } from 'web3-eth';
+import type { Eth, BlockHeader, Transaction } from 'web3-eth';
 declare let gethVpnSocketClient: Eth;
 declare let gethVpnHttpClient: Eth;
 declare let gethSocketClient: Eth;
 declare let gethHttpClient: Eth;
-export { gethVpnHttpClient, gethVpnSocketClient, gethHttpClient, gethSocketClient };
+declare let gethDockerHttpClient: Eth;
+declare let gethDockerSocketClient: Eth;
+export { gethVpnHttpClient, gethVpnSocketClient, gethHttpClient, gethSocketClient, gethDockerHttpClient, gethDockerSocketClient };
+export type { Eth, BlockHeader, Transaction };

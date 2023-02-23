@@ -1,6 +1,6 @@
 {
   "name": "@ethereum_net_stats/get_geth_connections",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "license": "MIT",

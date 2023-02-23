@@ -12,5 +12,17 @@ let gethVpnHttpClient: Eth = new Web3(`${process.env.GETH_VPN_HTTP_API_ADDRESS}`
 let gethSocketClient: Eth = new Web3(`${process.env.GETH_LAN_SOCKET_API_ADDRESS}`).eth;
 let gethHttpClient: Eth = new Web3(`${process.env.GETH_LAN_HTTP_API_ADDRESS}`).eth;
 
-export {gethVpnHttpClient, gethVpnSocketClient, gethHttpClient, gethSocketClient}
+// Connect geth via docker
+let gethDockerHttpClient: Eth = new Web3(`${process.env.GETH_DOCKER_HTTP_API_ADDRESS}`).eth;
+let gethDockerSocketClient: Eth = new Web3(`${process.env.GETH_DOCKER_SOCKET_API_ADDRESS}`).eth;
+
+export {
+    gethVpnHttpClient,
+    gethVpnSocketClient,
+    gethHttpClient,
+    gethSocketClient,
+    gethDockerHttpClient,
+    gethDockerSocketClient
+};
+
 export type {Eth, BlockHeader, Transaction}
