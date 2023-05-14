@@ -1,7 +1,7 @@
 import "dotenv/config";
 
 import Web3 from "web3";
-import { WebsocketProvider } from 'web3-core'
+import WebsocketProvider from 'web3-providers-ws'
 
 import type {Eth, BlockHeader, Transaction} from 'web3-eth';
 
